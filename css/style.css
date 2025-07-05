@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Mono&display=swap');
+
+body {
+    text-align: center;
+    background-image: url("../img/GamnsaGDPS.webp");
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-color: #f2f2f2;
+    margin: 0;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    color: #333;
+}
+
+/* Contenedor del encabezado con imagen de fondo */
+.title_bg {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Capa oscura sobre la imagen */
+.title_bg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 0;
+}
+
+/* Elementos dentro del header */
+.title_bg * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Título principal */
+.title_font {
+    font-family: "Libertinus Mono", monospace;
+    font-size:5em;
+    color: #ffffff;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    margin: 0;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.image img {
+    width: 150px;               /* ajusta el tamaño a lo que quieras */
+    height: auto;
+    border-radius: 8px;
+}
+
+.level {
+    color: #ffffff;
+    display: inline-block;
+    width: 95%;               /* ancho fijo para cada nivel */
+    margin: 10px;
+    background-color: rgba(70, 68, 68, 0.8);
+    border: solid 3px #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Separadores con estilo sutil */
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 40px auto;
+    width: 60%;
+}
+
+/* Ejemplo de sección de contenido futura */
+section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
