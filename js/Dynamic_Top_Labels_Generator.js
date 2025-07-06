@@ -1,5 +1,5 @@
 const levelsToGenerate = [
-    { name: "Extremescapes", top: 1, id: "813" },
+    { name: "Extremscapes", top: 1, id: "813" },
     { name: "MysticC DreaM", top: 2, id: "300" }
 ];
 
