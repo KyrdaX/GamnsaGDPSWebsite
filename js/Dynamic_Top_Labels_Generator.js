@@ -2,6 +2,10 @@ const levelsToGenerate = [
     { name: "Extremescapes", top: 1, id: "813" },
 ];
 
+for (log of levelsToGenerate) {
+    console.log(log)
+}
+
 const container = document.querySelector(".levels_container");
 
 levelsToGenerate.sort((a, b) => a.top - b.top);
