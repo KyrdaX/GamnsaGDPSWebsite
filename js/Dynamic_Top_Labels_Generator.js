@@ -1,6 +1,6 @@
 const levelsToGenerate = [
     { name: "Extremescapes", top: 1, id: "813" },
-    { name: "MysticC DreaM", top: 2, id: 300 }
+    { name: "MysticC DreaM", top: 2, id: "300" }
 ];
 
 for (log of levelsToGenerate) {
