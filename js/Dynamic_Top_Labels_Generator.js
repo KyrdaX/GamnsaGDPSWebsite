@@ -1,9 +1,9 @@
 const levelsToGenerate = [
-    { name: "Extremescapes", top: 1, id: "813" },
+    { name: "Extremescapes", top: 1, id: "813" }
 ];
 
 for (log of levelsToGenerate) {
-    console.log(log)
+    console.log(`name: ${log.name}\ntop: ${log.top}\nid: ${top.id}`)
 }
 
 const container = document.querySelector(".levels_container");
