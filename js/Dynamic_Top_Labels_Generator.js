@@ -8,29 +8,42 @@ levelsToGenerate.sort((a, b) => a.top - b.top);
 
 for (let i in levelsToGenerate) {
     const level = levelsToGenerate[i];
-    
-    // Crear el contenedor principal
+
     const levelDiv = document.createElement("div");
     levelDiv.className = "level";
-    
-    // Contenedor de imagen
+
     const imageDiv = document.createElement("div");
     imageDiv.className = "image";
-    
+
     const img = document.createElement("img");
     img.src = "/GamnsaGDPSWebsite/img/Extreme_Demon_Face.png";
-    
+
     imageDiv.appendChild(img);
-    
+
     const title = document.createElement("h1");
     title.textContent = `#${level.top} ${level.name}`;
 
     const levelID = document.createElement("h2");
-    levelID.textContent = `${level.id}`;
-    
+    levelID.textContent = `ID: ${level.id}`;
+    levelID.style.cursor = "pointer"; // Para mostrar que es clickeable
+
+    // Al hacer clic, se copia la ID
+    levelID.addEventListener("click", () => {
+        navigator.clipboard.writeText(level.id)
+            .then(() => {
+                levelID.textContent = `ID copiada: ${level.id}`;
+                setTimeout(() => {
+                    levelID.textContent = `ID: ${level.id}`;
+                }, 2000); // Volver al texto original después de 2 segundos
+            })
+            .catch(err => {
+                console.error("Error al copiar", err);
+            });
+    });
+
     levelDiv.appendChild(imageDiv);
     levelDiv.appendChild(title);
     levelDiv.appendChild(levelID);
-    
+
     container.appendChild(levelDiv);
 }
