@@ -26,10 +26,11 @@ for (let i in levelsToGenerate) {
     title.textContent = `#${level.top} ${level.name}`;
 
     const levelID = document.createElement("h2");
-    levelID.textContent = `${level.id}`
+    levelID.textContent = `${level.id}`;
     
     levelDiv.appendChild(imageDiv);
     levelDiv.appendChild(title);
+    levelDiv.appendChild(levelID);
     
     container.appendChild(levelDiv);
 }
