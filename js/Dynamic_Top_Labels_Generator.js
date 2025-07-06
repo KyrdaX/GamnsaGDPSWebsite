@@ -3,7 +3,7 @@ const levelsToGenerate = [
 ];
 
 for (log of levelsToGenerate) {
-    console.log(`name: ${log.name}\ntop: ${log.top}\nid: ${log.id}`)
+    console.log(`name: ${log.name}\ntop: ${log.top}\nid: ${log.id}\n`)
 }
 
 const container = document.querySelector(".levels_container");
