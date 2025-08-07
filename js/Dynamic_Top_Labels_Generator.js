@@ -21,7 +21,7 @@ for (let i in levelsToGenerate) {
     imageDiv.className = "image";
 
     const img = document.createElement("img");
-    img.src = "/GamnsaGDPSWebsite/img/Extreme_Demon_Face.png";
+    img.src = "img/Extreme_Demon_Face.png";
 
     imageDiv.appendChild(img);
 
