@@ -8,7 +8,7 @@ const levelsToGenerate = [
     { name: "Figure circles extr", top: 7, id: "928" },
     { name: "Sonic Neon extreme", top: 8, id: "829" },
     { name: "old Stereo Madness", top: 9, id: "587" },
-    { name: "Blind Faith", top: 10, id "850" },
+    { name: "Blind Faith", top: 10, id: "850" },
     { name: "666", top: 11, id: "832" }
 ];
 
