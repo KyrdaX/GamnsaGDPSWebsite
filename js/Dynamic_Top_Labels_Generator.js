@@ -1,6 +1,15 @@
 const levelsToGenerate = [
-    { name: "Extremscapes", top: 1, id: "813" },
-    { name: "MysticC DreaM", top: 2, id: "300" }
+    { name: "Extremscapes", top: 2, id: "813" },
+    { name: "traumas buff buff", top: 1, id: "980" },
+    { name: "si que hay webos", top: 3, id: "795" },
+    { name: "webolactico plus", top: 4, id: "803" },
+    { name: "The Art of el Bongue", top: 5, id: "588" },
+    { name: "Nuke powder Extreme", top: 6, id: "145" },
+    { name: "Figure circles extr", top: 7, id: "928" },
+    { name: "Sonic Neon extreme", top: 8, id: "829" },
+    { name: "old Stereo Madness", top: 9, id: "587" },
+    { name: "Blind Faith", top: 10, id "850" },
+    { name: "666", top: 11, id: "832" }
 ];
 
 for (log of levelsToGenerate) {
